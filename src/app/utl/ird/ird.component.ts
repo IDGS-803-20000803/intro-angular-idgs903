@@ -6,8 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./ird.component.css']
 })
 export class IrdComponent {
-
+  muestraImagen:boolean=true;
+  listFilter:string='';
+  imagenMargin:number=2;
+  wihtImagen:number=80;
   // alumnos:any[] = []
+
+showImagen():void{
+  this.muestraImagen =! this.muestraImagen
+}
 
   alumnos: any[] = [
     {
